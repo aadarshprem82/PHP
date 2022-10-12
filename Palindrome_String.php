@@ -1,5 +1,5 @@
 <?php
-    #WAP to check the number is Palindrome or not.
+    #WAP to check the String is Palindrome or not.
     $text = "NITIN";
 #Type 1.
     $reverse = strrev($text);
