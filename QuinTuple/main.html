@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>QuinTuple</title>
+    <style>
+        body {
+            font-family: Roboto;
+            /*margin-top: 20px;*/
+        }
+        
+        #nav {
+            margin: auto;
+            padding: 15px;
+            background-color: lightskyblue;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        
+        a {
+            background-color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 10px;
+            color: black;
+            transition-duration: 500ms;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        #name {
+            font-size: 70px;
+            font-weight: bolder;
+            color: white;
+            background-color: salmon;
+            border-top-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            transition-duration: 500ms;
+        }
+        
+        #af {
+            font-size: large;
+            font-weight: lighter;
+            color: darksalmon;
+            background-color: whitesmoke;
+            border-radius: 50px;
+            /*padding: 10px;*/
+        }
+        
+        a:hover {
+            font-size: 30px;
+            transition-duration: 500ms;
+        }
+    </style>
+    <script>
+        function done() {
+            document.getElementById('name').style.fontSize = '85px';
+            document.getElementById('name').style.color = 'lightsalmon';
+            document.getElementById('name').style.backgroundColor = 'white';
+            document.getElementById('name').style.borderTopRightRadius = '160px';
+            document.getElementById('name').style.borderBottomLeftRadius = '160px'
+            document.getElementById('name').style.transitionDuration = '1800ms';
+        }
+    </script>
+</head>
+
+<body background="sch.jpg">
+    <div>
+        <p id="name" onmouseenter="done()">QuinTuple</p>
+        <!-- <p id="af">Don Bosco Technical School, Ohkla Road, New Delhi-110025<br>Affliated to GGSIPU</p> -->
+    </div>
+    <div id="nav">
+        <nav id="link" align="center">
+            <a href="form.php">Registration</a>
+            <a href="Calc.php">Calculation</a>
+            <a href="Score.php">Tournament Score</a>
+            <a href="Table.php">Time Table</a>
+            <a href="Ques.php">Questionnaire</a>
+        </nav>
+    </div>
+</body>
+
+</html>

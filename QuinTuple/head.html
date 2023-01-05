@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Roboto;
+        }
+        
+        a {
+            float: left;
+            text-decoration: none;
+        }
+        
+        #name {
+            text-align: center;
+            font-size: 70px;
+            font-weight: bolder;
+            color: white;
+            background-color: salmon;
+            border-top-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            transition-duration: 200ms;
+        }
+    </style>
+    <script>
+        function done() {
+            document.getElementById('name').style.fontSize = '85px';
+            document.getElementById('name').style.color = 'lightsalmon';
+            document.getElementById('name').style.backgroundColor = 'white';
+            document.getElementById('name').style.borderTopRightRadius = '160px';
+            document.getElementById('name').style.borderBottomLeftRadius = '160px'
+            document.getElementById('name').style.transitionDuration = '1200ms';
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1><a href="main.html">&nbsp🚀</a></h1>
+        <h1 id="name" onmouseenter="done()">QuinTuple</h1>
+        <!-- <p id="af">Don Bosco Technical School, Ohkla Road, New Delhi-110025<br>Affliated to GGSIPU</p> -->
+    </div>
+</body>
+
+</html>
