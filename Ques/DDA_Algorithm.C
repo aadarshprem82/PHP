@@ -2,7 +2,8 @@
 #include<conio.h>
 void main(){
   int gh = DETECT, gm;
-  int x1,y1,x2,y2,dx,dy,constr,p;
+  float x,y,dx,dy,s;
+  int x1,y1,x2,y2,i;
   initgraph(&gh, &gm, "C:\\TurboC3\\BGI");
   printf("Enter the value of X1 : ");
   scanf("%d",&x1);
@@ -12,22 +13,24 @@ void main(){
   scanf("%d",&x2);
   printf("Enter the value of Y2 : ");
   scanf("%d",&y2);
-  dx = x2-x1;
-  dy = y2-y1;
-  constr = dx;
-  p = 2*dy - dx;
-  while(constr>0){
-    putpixel(x1,y1,2);
-    if(p<0){
-      x1 += 1;
-      p = p + 2*dy;
-    }
-    else{
-      x1 += 1;
-      y1 += 1;
-      p = p + 2*(dy-dx);
-    }
-    constr--;
+  dx = (float)(x2-x1);
+  dy = (float)(y2-y1);
+  if(dx>=dy){
+  s = dx;
+  }
+  else{
+  s = dy;
+  }
+  dx = dx/s;
+  dy = dy/s;
+  x = x1;
+  y = y1;
+  i = 1;
+  while(i <= s){
+    putpixel(x,y,WHITE);
+    x += dx;
+    y += dy;
+    i = i+ 1;
   }
   getch();
 }
