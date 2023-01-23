@@ -31,7 +31,7 @@ void main(){
    else
   {
   y=y-1;
-  d=d+fx+-fy+b_sqr;
+  d=d+fx-fy+b_sqr;
   fy=fy-(2*a_sqr);
   }
   x=x+1;
